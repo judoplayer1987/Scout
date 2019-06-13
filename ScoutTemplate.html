@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MXScout $TAG</title>
+    <style>
+        h1{background: #007DB8;
+                padding: 15px;
+                color: white;}
+        footer{background: #007DB8;
+                padding: 10px;
+                color: white;
+                text-align: center;
+                position: fixed;
+                bottom: 0;
+                width:100%;}
+        h6{padding-left: 15px;}
+
+    </style>
+</head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type='JavaScript'>
+
+</script>
+
+<body>
+    <div>
+      <h1>MXScout</h1>
+    </div>
+    <div><h6>Service Tag: $TAG</h6></div>
+    <div><h6>MM Revision: $MM</h6></div>
+    <div><h6>Uptime: $UPTIME</h6></div>
+
+<div class="btn-group" role="group" style='width: 100%'>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#manuals" style="background-color: #007DB8; width: 50%">Manuals</button>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#updates" style="background-color: #007DB8; width: 50%">MX Family Downloads</button>
+
+
+</div>
+
+
+<div id="manuals" class="collapse">
+    <a href="https://www.dell.com/support/home/product-support/product/poweredge-mx7000/manuals" style="margin-left: 10px;">MX7000 Manuals</a> <br>
+    <a href="https://www.dell.com/support/home/product-support/product/poweredge-mx5016s/manuals" style="margin-left: 10px;">MX5016s Manuals</a> <br>
+    <a href="https://www.dell.com/support/home/product-support/product/poweredge-mx740c/manuals" style="margin-left: 10px;">MX740c Manuals</a> <br>
+    <a href="https://www.dell.com/support/home/product-support/product/poweredge-mx840c/manuals" style="margin-left: 10px;">MX840c Manuals</a> <br>
+
+  </div>
+  <div id="updates" class="collapse">
+    <a href="https://www.dell.com/support/home/product-support/product/poweredge-mx7000/drivers" target="_blank" style="margin-left: 10px;">MX7000</a> <br>
+    <a href="https://www.dell.com/support/home/product-support/product/poweredge-mx5016s/drivers" target="_blank" style="margin-left: 10px;">MX5016s</a> <br>
+    <a href="https://www.dell.com/support/home/product-support/product/poweredge-mx740c/drivers" target="_blank" style="margin-left: 10px;">MX740c</a> <br>
+    <a href="https://www.dell.com/support/home/product-support/product/poweredge-mx840c/drivers" target="_blank" style="margin-left: 10px;">MX840c</a> <br>
+
+  </div>
+  <br>
+
+<div class="btn-group" role="group" style='width: 100%'>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#psus" style="margin-top: 2px; background-color: #007DB8; width: 20%">PSUs</button>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#compute" style="margin-top: 2px; background-color: #007DB8; width: 20%">Compute</button>
+
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#storage" style="margin-top: 2px; background-color: #007DB8; width: 20%">Storage</button>
+
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#ioms" style="margin-top: 2px; background-color: #007DB8; width: 20%">IOMs</button>
+
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#quicklogs" style="margin-top: 2px; background-color: #007DB8; width: 20%">System Logs</button>
+</div>
+
+    <div id="psus" class="collapse">
+        <table style="width:100%">
+          <tr>
+            <th>PSU 0</th>
+            <th>PSU 1</th>
+          </tr>
+          <tr>
+            <td>PS0 Manufacture Time: $PS0MfgTime</td>
+            <td>PS1 Manufacture Time: $PS1MfgTime</td>
+          </tr>
+          <tr>
+            <td>PS0 Manufacturer: $PS0Maker</td>
+            <td>PS1 Manufacturer: $PS1Maker</td>
+          </tr>
+          <tr>
+            <td>PS0 Details: $PS0ProdName</td>
+            <td>PS1 Details: $PS1ProdName</td>
+          </tr>
+          <tr>
+            <td>PS0 Part Number: $PS0PartNum</td>
+            <td>PS1 Part Number: $PS1PartNum</td>
+          </tr>
+          <tr>
+            <td>PS0 Serial Number: $PS0SerNum</td>
+            <td>PS1 Serial Number: $PS1SerNum</td>
+          </tr>
+          <tr>
+            <th>PSU 2</th>
+            <th>PSU 3</th>
+          </tr>
+          <tr>
+            <td>PS2 Manufacture Time: $PS2MfgTime</td>
+            <td>PS3 Manufacture Time: $PS3MfgTime</td>
+          </tr>
+          <tr>
+            <td>PS2 Manufacturer: $PS2Maker</td>
+            <td>PS3 Manufacturer: $PS3Maker</td>
+          </tr>
+          <tr>
+            <td>PS2 Details: $PS2ProdName</td>
+            <td>PS3 Details: $PS3ProdName</td>
+          </tr>
+          <tr>
+            <td>PS2 Part Number: $PS2PartNum</td>
+            <td>PS3 Part Number: $PS3PartNum</td>
+          </tr>
+          <tr>
+            <td>PS2 Serial Number: $PS2SerNum</td>
+            <td>PS3 Serial Number: $PS3SerNum</td>
+          </tr>
+          <tr>
+            <th>PSU 4</th>
+            <th>PSU 5</th>
+          </tr>
+          <tr>
+            <td>PS4 Manufacture Time: $PS4MfgTime</td>
+            <td>PS5 Manufacture Time: $PS5MfgTime</td>
+          </tr>
+          <tr>
+            <td>PS4 Manufacturer: $PS4Maker</td>
+            <td>PS5 Manufacturer: $PS5Maker</td>
+          </tr>
+          <tr>
+            <td>PS4 Details: $PS4ProdName</td>
+            <td>PS5 Details: $PS5ProdName</td>
+          </tr>
+          <tr>
+            <td>PS4 Part Number: $PS4PartNum</td>
+            <td>PS5 Part Number: $PS5PartNum</td>
+          </tr>
+          <tr>
+            <td>PS4 Serial Number: $PS4SerNum</td>
+            <td>PS5 Serial Number: $PS5SerNum</td>
+          </tr>
+          </tr> </table>
+          <br><br>
+          <h4>Power Config: </h4>
+          <p>$PSUS</p>
+    </div>
+
+    <div id="compute" class="collapse">
+        <p>$COMPUTE</p>
+    </div>
+
+    <div id="storage" class="collapse">
+        <p>This section is under developed and displayed at this time.</p>
+        <p>Please review the Peripheral Test file under System Logs.</p>
+
+    </div>
+
+    <div id="ioms" class="collapse">
+        <table style="width:100%">
+          <tr>
+            <th>IOM A1</th>
+            <th>IOM A2</th>
+          </tr>
+          <tr>
+              <td>Service Tag: $A1TAG</td>
+              <td>Service Tag: $A2TAG</td>
+          </tr>
+          <tr>
+              <td>Firmware version: $A1FW</td>
+              <td>Firmware version: $A2FW</td>
+          </tr>
+          <tr>
+              <td>Hardware revision: $A1HW</td>
+              <td>Hardware revision: $A2HW</td>
+          </tr>
+          <tr>
+              <td>Connection: $A1PROTO</td>
+              <td>Connection: $A2PROTO</td>
+          </tr>
+          <tr>
+              <td>Model: $A1MODEL</td>
+              <td>Model: $A2MODEL</td>
+          </tr> 
+          <tr>
+            <th>IOM B1</th>
+            <th>IOM B2</th>
+          </tr>
+          <tr>
+              <td>Service Tag: $B1TAG</td>
+              <td>Service Tag: $B2TAG</td>
+          </tr>
+          <tr>
+              <td>Firmware version: $B1FW</td>
+              <td>Firmware version: $B2FW</td>
+          </tr>
+          <tr>
+              <td>Hardware revision: $B1HW</td>
+              <td>Hardware revision: $B2HW</td>
+          </tr>
+          <tr>
+              <td>Connection: $B1PROTO</td>
+              <td>Connection: $B2PROTO</td>
+          </tr>
+          <tr>
+              <td>Model: $B1MODEL</td>
+              <td>Model: $B2MODEL</td>
+          </tr>
+          <tr>
+            <th>IOM C1</th>
+            <th>IOM C2</th>
+          </tr>
+          <tr>
+              <td>Service Tag: $C1TAG</td>
+              <td>Service Tag: $C2TAG</td>
+          </tr>
+          <tr>
+              <td>Firmware version: $C1FW</td>
+              <td>Firmware version: $C2FW</td>
+          </tr>
+          <tr>
+              <td>Hardware revision: $C1HW</td>
+              <td>Hardware revision: $C2HW</td>
+          </tr>
+          <tr>
+              <td>Connection: $C1PROTO</td>
+              <td>Connection: $C2PROTO</td>
+          </tr>
+          <tr>
+              <td>Model: $C1MODEL</td>
+              <td>Model: $C2MODEL</td>
+          </tr>
+           </table>
+    </div>
+
+    <div id="quicklogs" class="collapse">
+        <p><a href="$lclwrap" target="_blank" style="margin-left: 10px;">LCLWrap Test</a> <br>
+        <a href="$chassismd" target="_blank" style="margin-left: 10px;">ChassisMD Test</a> <br>
+        <a href="$journalctl" target="_blank" style="margin-left: 10px;">Journalctl</a> <br>
+        <a href="$sysinfo" target="_blank" style="margin-left: 10px;">Sysinfo</a> <br>
+        <a href="$ip" target="_blank" style="margin-left: 10px;">IP Output</a> <br>
+        <a href="$ifconfig" target="_blank" style="margin-left: 10px;">Ifconfig Output</a> <br>
+        <a href="$periph" target="_blank" style="margin-left: 10px;">Peripheral Test Output</a> <br>
+        <a href="$IOMD" target="_blank" style="margin-left: 10px;">Iomd Test Output</a> <br></p>
+    </div>
+
+<div>
+    <footer id="footer"><a href="mailto:Dylan_Jackson@Dell.com?subject=MXScout Assistance" style="color:white">Application Support</a></footer>
+</div>
+</html>
